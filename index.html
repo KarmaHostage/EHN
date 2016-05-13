@@ -1,0 +1,50 @@
+---
+layout: index
+title: Home
+permalink: /
+---
+
+<div id="service">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-md-4">
+                <i class="fa fa-diamond"></i>
+                <h4>By the community</h4>
+                <p>The Ethical Hacker's Handbook has been supported by various community members. It's a decentralized database of Security Knowledge.</p>
+                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-github-alt"></i>
+                <h4>Open Source</h4>
+                <p>We're fully open source. If you wish to add or update data, or remove outdated information, feel free to fork and PR.</p>
+                <p><br/><a href="https://github.com/karmahostage/EHN" class="btn btn-theme">More Info</a></p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa  fa-balance-scale"></i>
+                <h4>Very Active</h4>
+                <p>KarmaHostage is a very active team of security researching who are ready to share their knowledge. We thrive to keep a healthy balance between quality and quantity.</p>
+                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+            </div>
+        </div>
+    </div><! --/container -->
+</div><! --/service -->
+
+{% include learning-sections.html title="LEARNING SUBJECTS" limit=10 %}
+
+<div class="container mtb">
+    <div class="row">
+        <div class="col-lg-5 col-lg-offset-1">
+            <h4>More About KarmaHostage.</h4>
+            <p>{{ site.about }}</p>
+            <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
+        </div>
+
+        <div class="col-lg-5">
+            <h4>Frequently Asked</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['question'] %}
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+            {% endfor %}
+        </div>
+    </div><! --/row -->
+</div><! --/container -->
