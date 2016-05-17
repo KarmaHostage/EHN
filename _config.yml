@@ -5,7 +5,7 @@ title: Ethical Hacker's Notebook.
 description: "Your Ethical Hacker's notebook, written by and for hackers"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
-url: "http://karmahostage.github.io/EHN"
+url: "https://ehn.karmahostage.com"
 
 # Build settings
 markdown: kramdown
